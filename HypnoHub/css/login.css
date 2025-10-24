@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Story+Script&family=Varela+Round&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #ddd;
+    height: 100dvh;
+    font-family: 'Varela Round', sans-serif;
+}
+
+a{
+    margin: 1rem;
+}
+
+a:hover{
+    color: #fe1afa;
+}
+
+.loginPG{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2rem; 
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #080530;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    height: 80dvh;
+    width: 60dvh;
+    gap: 1rem;
+    position: absolute;
+    bottom: 10dvh;
+    right: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.loginPG a{
+    color: white;
+    text-align: center;
+}
+
+.loginPG a:hover{
+    color: #fe1afa;
+}
+
+.login input{
+    border-radius: 5px;
+    background: #eee;
+    border: none;
+    padding: 5px;
+}
+
+.login button{
+    background: #064873;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
+
+.login button:hover{
+    box-shadow: 0 0 5px rgb(0, 102, 255);
+    transform: scale(1.10);
+    transition: 0.3s;
+}
+
+img{
+    height: 400px;
+    width: 400px;
+}
+
+.motivation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #999;
+    color: #eee;
+    padding: 1rem;
+    border-radius: 10px;
+    height: 90dvh;
+    width: 70dvh;
+    gap: 1rem;
+    z-index: -2;
+    position: absolute;
+    right: 17%;
+    bottom: 5dvh;
+    font-weight: 600;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+
+}
+
+h3{
+    font-family: 'Story Script', sans-serif;
+}
