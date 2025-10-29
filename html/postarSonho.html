@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postar Sonho</title>
+</head>
+<body>
+
+    <!-- Divida a tela de Postagem de Sonho em quatro telas, onde serão quatro etapas, sendo a ultima de revisao do processo inteiro, e as outras três de preenchimento dos dados, para deixar tudo mais dinâmico e melhor -->
+
+    <h1>Postar Sonho</h1>
+    <form action="/postarSonho" method="POST">
+        <label for="titulo">Título do Sonho:</label><br>
+        <input type="text" id="titulo" name="titulo" required><br><br>
+
+        <label for="descricao">Descrição do Sonho:</label><br>
+        <textarea id="descricao" name="descricao" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="data">Data do Sonho:</label><br>
+        <input type="date" id="data" name="data" required><br><br>
+
+        <label for="categoria">Categoria do Sonho:</label><br>
+        <select id="categoria" name="categoria" required>
+            <option value="pesadelo">Pesadelo</option>
+            <option value="sonho_lucido">Sonho Lúcido</option>
+            <option value="sonho_recorrente">Sonho Recorrente</option>
+            <option value="outro">Outro</option>
+        </select><br><br>
+
+        <label for="imagem">Imagem do Sonho:</label><br>
+        <input type="file" id="imagem" name="imagem" accept="image/*"><br><br>
+
+        <label for="tags">Tags do Sonho:</label><br>
+        <input type="text" id="tags" name="tags" placeholder="Separe as tags por vírgula"><br><br>
+
+        <input type="submit" value="Postar Sonho">
+    </form>
+</body>
+</html>
